@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep Screen On</title>
+    <link rel="stylesheet" href="file.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Keep Your Screen On</h1>
+    <br>
+    <p>This page will keep your PC screen on as long as it is open.</p>
+    <p><strong>Note:</strong> Keeping the screen on for extended periods can drain your battery quickly.</p>
+<br>
+<br>
+    <h2>Quick Guide for "Keep Your Screen On" Webpage</h2>
+    <br>
+    <p>
+        Open the page in a modern browser (e.g., Chrome, Edge), click "Start" to keep your screen on and switch to dark mode. 
+        <br>
+        The "Stop" button will appear; click it to return to normal settings and light mode. 
+        <br>
+        Ensure your browser supports the Screen Wake Lock API and use this feature while plugged in to avoid battery drain.
+    </p>
+
+    <button id="startButton" onclick="startKeepingScreenOn()">Start</button>
+    <button id="stopButton" onclick="stopKeepingScreenOn()" style="display: none;">Stop</button>
+    <p id="timer" style="display: none;">Time Elapsed: <span id="timeElapsed">0</span> seconds</p>
+
+<div class="desk">  <i class="fa-solid fa-desktop"></i></div>
+  
+
+    <script src="file.js"></script>
+</body>
+</html>
